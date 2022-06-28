@@ -28,13 +28,30 @@ const numbersArray2 = [24, 27, 30, 33, 36]
 
 // a) Create a test with expect statements for each of the variables provided.
 
+
+//Psuedocode: const num1 is 15, var is index equal 15, if modulo 3, alert 15 is divisible by 3
 const num1 = 15
 // Expected output: "15 is divisible by three"
+var i =15;
+if (i % 3 == 0) {
+ alert("15 is divisible by 3");
+} 
+
+// const num2 is 0, var is index equal 0, if modulo 3, alert 0 is divisible by 3
 const num2 = 0
 // Expected output: "0 is divisible by three"
+var i =0;
+if (i % 3 == 0) {
+ alert("0 is divisible by 3");
+} 
+
+// const num3 is -7, var is index equal 0, if modulo 3, alert 0 is divisible by 3
 const num3 = -7
 // Expected output: "-7 is not divisible by three"
-
+var i =0;
+if (i % 3 == 0) {
+ alert("-7 is not divisible by 3");
+} 
 
 // b) Create the function that makes the test pass.
 
@@ -44,10 +61,31 @@ const num3 = -7
 
 // a) Create a test with expect statements for each of the variables provided.
 
+//const randomnouns1 function capitalized array return map for each iteration. element to uppercase and substring to lowercase console log capitalized string.
 const randomNouns1 = ["streetlamp", "potato", "teeth", "conclusion", "nephew"]
+
+function capitalized(arr) {
+    return arr.map(element => {
+      return element.charAt(0).toUpperCase() + element.substring(1).toLowerCase();
+    });
+  }
+  console.log(capitalized(["streetlamp", "potato", "teeth", "conclusion", "nephew"]))
+
 // Expected output: ["Streetlamp", "Potato", "Teeth", "Conclusion", "Nephew"]
+
+//const randomnouns2 function capitalized array return map for each iteration. element to uppercase and substring to lowercase console log capitalized string.
+
 const randomNouns2 = ["temperature", "database", "chopsticks", "mango", "deduction"]
 // Expected output: ["Temperature", "Database", "Chopsticks", "Mango", "Deduction"]
+
+function capitalized(arr) {
+    return arr.map(element => {
+      return element.charAt(0).toUpperCase() + element.substring(1).toLowerCase();
+    });
+  }
+  
+ 
+  console.log(capitalized(["temperature", "database", "chopsticks", "mango", "deduction"]))
 
 
 // b) Create the function that makes the test pass.
@@ -67,3 +105,48 @@ const vowelTester3 = "challenges"
 
 
 // b) Create the function that makes the test pass.
+
+// funtion first vowel string, let new string = string split, for new string .length if new string vowels are seperated return the first vowel index of 1.
+
+
+//Return the Index of the First Vowel
+
+function firstVowelinstr(str) {
+    let newstr = str.split('');
+    for(i=0; i<newstr.length; i++){
+        if(newstr[i] == 'a'  || newstr[i] == 'e' || newstr[i] == 'i' || newstr[i] == '0' | newstr[i] == 'u' || newstr[i] == 'A'  || newstr[i] == 'E' || newstr[i] == 'I' || newstr[i] == 'O' | newstr[i] == 'U') {
+            return i;
+        }
+    }
+}
+console.log(firstVowelinstr("learn"))
+
+
+// funtion first vowel string, let new string = string split, for new string .length if new string vowels are seperated return the first vowel index of 0.
+
+function firstVowelinstr(str) {
+    let newstr = str.split('');
+    for(i=0; i<newstr.length; i++){
+        if(newstr[i] == 'a'  || newstr[i] == 'e' || newstr[i] == 'i' || newstr[i] == '0' | newstr[i] == 'u' || newstr[i] == 'A'  || newstr[i] == 'E' || newstr[i] == 'I' || newstr[i] == 'O' | newstr[i] == 'U') {
+            return i;
+        }
+    }
+}
+console.log(firstVowelinstr("academy"))
+
+
+
+
+// funtion first vowel string, let new string = string split, for new string .length if new string vowels are seperated return the first vowel index of 2.
+
+function firstVowelinstr(str) {
+    let newstr = str.split('');
+    for(i=0; i<newstr.length; i++){
+        if(newstr[i] == 'a'  || newstr[i] == 'e' || newstr[i] == 'i' || newstr[i] == '0' | newstr[i] == 'u' || newstr[i] == 'A'  || newstr[i] == 'E' || newstr[i] == 'I' || newstr[i] == 'O' | newstr[i] == 'U') {
+            return i;
+        }
+    }
+}
+console.log(firstVowelinstr("challenges"))
+
+
