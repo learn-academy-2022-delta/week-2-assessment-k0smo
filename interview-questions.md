@@ -68,3 +68,6 @@ Research and define the following terms to the best of your ability.
 constructor() render()componentDidMount()
 
 5. DOM: A DOM structure defines the way a document is accessed and is a programming api that has a structure tree with nodes that is an object representing a part of the document. DOM is the programming interface for web documents.
+
+
+"BRB, #{Sean}"
